@@ -1,0 +1,48 @@
+﻿h1 {
+    font-size: 2.25rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    border-bottom: 2px solid var(--recall-blue);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+section.content {
+    width: 100%;
+    display: block;
+}
+
+section .content.scrunch {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+sl-details::part(summary) {
+    transition: opacity 0.25s;
+}
+
+sl-details[open]::part(summary) {
+    opacity: 0;
+}
+
+sl-details::part(content) {
+    margin-top: -1rem;
+}
+
+sl-details h2 {
+    margin-top: 0;
+}
