@@ -1,0 +1,99 @@
+﻿h1 {
+    font-size: 2.25rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+h1 span {
+    display: block;
+    font-size: 1.75rem;
+}
+
+h1:after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    border-bottom: 2px solid var(--recall-blue);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.no-supporters {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: var(--sl-shadow-small);
+    padding: 1rem;
+    text-align: center;
+}
+
+.tier1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: center;
+}
+
+.tier1 li {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: var(--sl-shadow-small);
+    padding: 1rem;
+}
+
+.tier2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tier2 li {
+    background: rgba(0, 0, 0, 0.04);
+    box-shadow: var(--sl-shadow-small);
+    padding: 0.5rem;
+}
+
+.tier3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .tier1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tier3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .tier1 li,
+    .tier2 li {
+        background: rgba(255, 255, 255, 0.04);
+    }
+}

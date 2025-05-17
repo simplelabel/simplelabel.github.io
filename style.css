@@ -1,0 +1,140 @@
+﻿#SectionWhatWeDo {
+}
+
+#SectionFeatures {
+}
+
+#SectionPatreon i {
+    font-size: 10rem;
+}
+
+#SectionPatreon .content {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 4rem 2rem;
+    align-items: center;
+}
+
+#PatreonButton {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    #SectionPatreon .content {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    #PatreonButton {
+        grid-column: 1;
+    }
+}
+
+#SectionDownload h2 {
+    margin-left: 0;
+    text-align: center;
+}
+
+#SectionDownload i {
+    font-size: 6rem;
+}
+
+#SectionDownload sl-card {
+    text-align: center;
+}
+
+sl-card [slot='footer'] {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#SectionMission {
+    z-index: 1;
+}
+
+@media (min-width: 901px) {
+    #SectionMission .content {
+        display: grid;
+        grid-template-columns: 35% 1fr;
+        gap: 10%;
+        padding: 10rem 0;
+        align-items: end;
+    }
+
+    #SectionMission img {
+        width: 100%;
+    }
+
+    #SectionMission p {
+        font-size: 2vw;
+        margin: 0;
+    }
+
+    #SectionMission p + p {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    #SectionMission .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        align-items: center;
+        justify-items: center;
+    }
+
+    #SectionMission img {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    #SectionMission p {
+        font-size: 1.5rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    #SectionMission p + p {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    #SectionMission img {
+        max-width: 150px;
+    }
+
+    #SectionMission p {
+        font-size: 1.25rem;
+    }
+}
+
+#DownloadCards {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    /*#DownloadCards {
+			flex-direction: column;
+			flex-wrap: wrap;
+			gap: 1rem;
+		}
+
+		#DownloadCards i {
+			font-size: 2rem;
+		}*/
+
+    #DownloadCards sl-qr-code {
+        display: none;
+    }
+
+    #DownloadCards sl-button {
+    }
+}

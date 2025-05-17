@@ -1,0 +1,170 @@
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>reCall App</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+	<link href="/_Libraries/fontawesome-pro-6.7.2-web/css/fontawesome.css" rel="stylesheet" />
+	<link href="/_Libraries/fontawesome-pro-6.7.2-web/css/brands.css" rel="stylesheet" />
+	<link href="/_Libraries/fontawesome-pro-6.7.2-web/css/regular.css" rel="stylesheet" />
+	<link href="/_Libraries/fontawesome-pro-6.7.2-web/css/duotone.css" rel="stylesheet" />
+
+	<link rel="stylesheet"
+		  media="(prefers-color-scheme:light)"
+		  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
+	<link rel="stylesheet"
+		  media="(prefers-color-scheme:dark)"
+		  href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"
+		  onload="document.documentElement.classList.add('sl-theme-dark');" />
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/shoelace-autoloader.js"></script>
+
+	<link href="/_Includes/style.css" rel="stylesheet" />
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<body class="fullscreen-slideshow">
+	<header id="DesktopHeader">
+		<a href="/"><img src="/_Resources/images/ReCallLogo.png" /></a>
+		<a href="/premise">Our Premise</a>
+		<a href="/philosophy">Our Philosophy</a>
+		<a href="/#SectionDownload">Get the App</a>
+		<a href="/supporters">Supporters</a>
+	</header>
+	<header id="MobileHeader">
+		<a href="/"><img src="/_Resources/images/ReCallLogo.png" /></a>
+
+		<div style="flex-grow:2;"></div>
+
+		<button type="button" class="open-mobile-nav" id="TopOpenMobileNav">
+			<i class="fa-duotone fa-solid fa-bars"></i>
+		</button>
+	</header>
+
+	<nav id="MobileNav">
+		<a href="/">Home</a>
+		<a href="/premise">Our Premise</a>
+		<a href="/philosophy">Our Philosophy</a>
+		<a href="/#SectionDownload">Get the App</a>
+		<a href="/supporters">Supporters</a>
+		<sl-icon-button name="x-lg" label="Close" class="close-mobile-nav"></sl-icon-button>
+	</nav>
+
+	<main>
+		<section id="SectionMission" class="fullscreen slash">
+			<div class="content">
+				<img src="/_Resources/images/ReCallLogo.png" id="HeaderLogo" />
+				<div>
+					<p>In today's hyperconnected world, meaningful relationships often get lost in the digital noise. reCall is here to change that.</p>
+					<p>We help you build better relationships through intentional, consistent connection - without the distractions of social media.</p>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="SectionWhatWeDo" class="fullscreen slash">
+			<div class="content scrunch">
+				<h2>What We Do</h2>
+				<p>reCall is a thoughtfully designed mobile application that helps you maintain meaningful connections with the people who matter most in your life. Our app provides gentle reminders to reach out to friends and family at intervals you choose, helping you stay consistently present in their lives.</p>
+				<p>Building relationships isn't complicated, but it does require consistency. We're here to help you make it happen.</p>
+				<div style="display:flex;justify-content:center;">
+					<sl-button href="/premise">The Premise of reCall</sl-button>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="SectionFeatures" class="fullscreen slash">
+			<div class="content scrunch">
+				<h2>Key Features</h2>
+				<ul>
+					<li>Customizable contact reminders for friends and family</li>
+					<li>Birthday and anniversary tracking</li>
+					<li>Personal notes to remember important details about loved ones</li>
+					<li>Clean, distraction-free interface focused on real connection</li>
+				</ul>
+			</div>
+		</section>
+
+
+		<section id="SectionPhilosophy" class="fullscreen slash">
+			<div class="content scrunch">
+				<h2>Our Philosophy</h2>
+				<p>We believe in being social without the media. While technology has made it easier than ever to stay connected, it's also made it easier to substitute meaningful interaction with shallow engagement. reCall strips away the noise and focuses on what matters: genuine human connection.</p>
+				<div style="display:flex;justify-content:center;">
+					<sl-button href="/philosophy">Read More About Our Philosophy</sl-button>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="SectionHowItWorks" class="fullscreen slash">
+			<div class="content scrunch">
+				<h2>How It Works</h2>
+				<ol>
+					<li><a href="#SectionDownload">Download the app</a></li>
+					<li>Select the friends and family you want to stay in touch with</li>
+					<li>Set how often you'd like to be reminded to reach out</li>
+					<li>Receive gentle reminders to make those important connections</li>
+				</ol>
+			</div>
+		</section>
+
+
+		<section id="SectionDownload" class="fullscreen slash">
+			<div class="content scrunch">
+				<h2>Get the App</h2>
+				<div id="DownloadCards">
+					<sl-card>
+						<i class="fa-brands fa-google-play"></i>
+						<div slot="footer">
+							<sl-qr-code value="https://play.google.com/store/" fill="#5991CD" background="transparent" error-correction="H"></sl-qr-code>
+							<sl-button target="_blank" href="https://play.google.com/store/">Download for Android</sl-button>
+						</div>
+					</sl-card>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="SectionPatreon" class="fullscreen slash">
+			<div class="content scrunch">
+				<div>
+					<i class="fa-brands fa-patreon"></i>
+				</div>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum bibendum tempus nunc, vel facilisis erat euismod eu. Fusce tempus dui ut nunc auctor, at posuere metus vehicula. Phasellus eget massa rutrum purus tempor vehicula ac in metus. Phasellus cursus eros vel ultrices dictum. Curabitur eleifend a est ac suscipit.</p>
+				</div>
+				<div id="PatreonButton">
+					<sl-button target="_blank" href="https://www.patreon.com/reCallApp">Support Us On Patreon</sl-button>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="SectionEmail" class="fullscreen">
+			<div class="content scrunch">
+				<h2>News and Updates</h2>
+				<p>Join our email list and we will send you periodic updates every month or so on the development of recall and other future projects.</p>
+				<div style="display:flex;justify-content:center;gap:1rem;flex-direction:column;max-width:400px;margin-inline:auto;">
+					<sl-input disabled type="email" placeholder="Email"></sl-input>
+					<sl-button disabled>Sign Up to Receive News</sl-button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		© Worth Development 2025
+		<span style="flex-grow:2"></span>
+		<a href="/legal">Privacy Policy</a>
+	</footer>
+</body>
+</html>
+
+<script src="/_Includes/MobileHeader.js" type="text/javascript"></script>
